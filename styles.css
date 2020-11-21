@@ -61,7 +61,7 @@ a:active {
 }
 
 #toc {
-    background-image: url('/assets/toc.png');
+    background-image: url('assets/toc.png');
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 0px;
@@ -121,7 +121,7 @@ a:active {
 }
 
 #factbuttons {
-    background-image: url('/asseets/istockphoto-1165639982-170667a.jpg');
+    background-image: url('assets/istockphoto-1165639982-170667a.jpg');
 }
 
 #maze {
