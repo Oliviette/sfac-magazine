@@ -141,8 +141,8 @@ a:active {
     color: black;
     text-align: center;
     display: inline-block;
-    width: 48px;
-    height: 48px;
+    width: 8.9%;
+    height: 60px;
     cursor: context-menu;
 }
 .buttons002 {
@@ -152,20 +152,23 @@ a:active {
     color: transparent;
     text-align: center;
     display: inline-block;
-    width: 48px;
-    height: 48px;
+    width: 8.9%;
+    height: 60px;
     cursor: context-menu;
 }
 .boxes {
     position: absolute;
     /* top: 285px; */
     /* left: 42px; */
-    top: 34.25%;
-    left: 28.25%;
+    left: 7.5%;
+    padding-top: 45%;
+    position: center;
 }
+
 .container1 {
     position: relative;
 }
+
 img { 
     display: block;
     margin-left: auto;
@@ -504,5 +507,193 @@ img {
         margin-left: auto;
         margin-right: auto;
     }
-  
     }
+
+@media (max-width: 720px) {
+    .buttons001 {
+        height: 60px;
+    }
+    .buttons002 {
+        height: 60px;
+    }
+}
+
+@media (max-width: 700px) {
+    .buttons001 {
+        height: 59px;
+    }
+    .buttons002 {
+        height: 59px;
+    }
+}
+
+@media (max-width: 680px) {
+    .buttons001 {
+        height: 57px;
+    }
+    .buttons002 {
+        height: 57px;
+    }
+}
+
+@media (max-width: 660px) {
+    .buttons001 {
+        height: 55px;
+    }
+    .buttons002 {
+        height: 55px;
+    }
+}
+
+@media (max-width: 640px) {
+    .buttons001 {
+        height: 53px;
+    }
+    .buttons002 {
+        height: 53px;
+    }
+}
+
+@media (max-width: 620px) {
+    .buttons001 {
+        height: 51px;
+    }
+    .buttons002 {
+        height: 51px;
+    }
+}
+
+@media (max-width: 600px) {
+    .buttons001 {
+        height: 49px;
+    }
+    .buttons002 {
+        height: 49px;
+    }
+}
+
+@media (max-width: 580px) {
+    .buttons001 {
+        height: 47px;
+    }
+    .buttons002 {
+        height: 47px;
+    }
+}
+
+@media (max-width: 560px) {
+    .buttons001 {
+        height: 45px;
+    }
+    .buttons002 {
+        height: 45px;
+    }
+}
+
+@media (max-width: 520px) {
+    .buttons001 {
+        height: 43px;
+    }
+    .buttons002 {
+        height: 43px;
+    }
+}
+
+@media (max-width: 500px) {
+    .buttons001 {
+        height: 41px;
+    }
+    .buttons002 {
+        height: 41px;
+    }
+}
+
+@media (max-width: 480px) {
+    .buttons001 {
+        height: 39px;
+    }
+    .buttons002 {
+        height: 39px;
+    }
+}
+
+@media (max-width: 460px) {
+    .buttons001 {
+        height: 37px;
+    }
+    .buttons002 {
+        height: 37px;
+    }
+}
+
+@media (max-width: 420px) {
+    .buttons001 {
+        height: 35px;
+    }
+    .buttons002 {
+        height: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    .buttons001 {
+        height: 33px;
+    }
+    .buttons002 {
+        height: 33px;
+    }
+}
+
+@media (max-width: 380px) {
+    .buttons001 {
+        height: 31px;
+    }
+    .buttons002 {
+        height: 31px;
+    }
+}
+
+@media (max-width: 360px) {
+    .buttons001 {
+        height: 30px;
+    }
+    .buttons002 {
+        height: 30px;
+    }
+}
+
+@media (max-width: 340px) {
+    .buttons001 {
+        height: 28px;
+    }
+    .buttons002 {
+        height: 28px;
+    }
+}
+
+@media (max-width: 320px) {
+    .buttons001 {
+        height: 26px;
+    }
+    .buttons002 {
+        height: 26px;
+    }
+}
+
+@media (max-width: 290px) {
+    .buttons001 {
+        height: 24px;
+    }
+    .buttons002 {
+        height: 24px;
+    }
+}
+
+@media (max-width: 260px) {
+    .buttons001 {
+        height: 22px;
+    }
+    .buttons002 {
+        height: 22px;
+    }
+}
