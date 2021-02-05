@@ -16,17 +16,17 @@
 }
 
 h1 {
-    padding-top: 50px;
+    padding-top: 70px;
     font-size: 1.25em;
     text-align: center;
-    color: black;
+    color: white;
     font-family: quicksand;
 }
 
 h2 {
     font-size: 1.1em;
     text-align: center;
-    color: black;
+    color: white;
     font-family: quicksand;
     padding-bottom: 15%;
 }
@@ -34,34 +34,38 @@ h2 {
 h3 {
     font-size: 1.1em;
     text-align: center;
-    color: black;
+    color: white;
     font-family: quicksand;
 }
 
 a:link {
-    color: black;
+    color: white;
 }
 
 a:visited {
-    color: black;
+    color: white;
 }
 
 a:hover {
-    color: darkblue;
+    color: grey;
 }
 
 a:active {
-    color: black;
+    color: white;
 }
 
 .img-container {
     max-width: 100vh;
     padding-left: 0px;
     padding-right: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 #toc {
-    background-image: url('assets/toc.png');
+    background-image: url('assets/3-\ \(F\ \)SFAC-\ Table\ of\ Contents.png');
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 0px;
@@ -71,37 +75,21 @@ a:active {
     color: black;
 }
 
-#shortstory1 {
-    max-width: 812px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-}
-
-#questions {
-    padding-bottom: 55px;
-}
-
-#treasurehunt {
-    z-index: 0;
-}
-
 .text-over-img {
     z-index: 1;
     font-size: 4em;
     margin-top: -45%;
     color: black;
-    padding-left: 29%;
     padding-bottom: 29%;
     font-family: sigmar one;
 }
 
 .printables {
-    background-image: url('assets/istockphoto-1165639982-170667a.jpg');
+    background-color: #0D1E52;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: black;
+    color: white;
     font-family: quicksand;
 }
 
@@ -120,8 +108,14 @@ a:active {
     font-family: quicksand;
 }
 
+#answer2 {
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: quicksand;
+}
+
 #factbuttons {
-    background-image: url('assets/istockphoto-1165639982-170667a.jpg');
+    background-color: #0D1E52;
 }
 
 #maze {
@@ -134,15 +128,30 @@ a:active {
     cursor: pointer;
 }
 
+#mazetitle {
+    padding-top: 60px;
+    font-size: 1.25em;
+    text-align: center;
+    color: black;
+    font-family: quicksand;
+}
+
+#mazetext {
+    font-size: 1.1em;
+    text-align: center;
+    color: black;
+    font-family: quicksand;
+}
+
 .buttons001 {
     position: relative;
-    border: 1px solid rgb(52, 195, 235);
-    background-color: yellow;
+    border: 1px solid black;
+    background-color: rgb(235, 135, 88);
     color: black;
     text-align: center;
     display: inline-block;
-    width: 8.9%;
-    height: 60px;
+    width: 5.5%;
+    height: 42.5px;
     cursor: context-menu;
 }
 .buttons002 {
@@ -152,16 +161,17 @@ a:active {
     color: transparent;
     text-align: center;
     display: inline-block;
-    width: 8.9%;
-    height: 60px;
+    width: 5.5%;
+    height: 42.5px;
     cursor: context-menu;
 }
+
 .boxes {
     position: absolute;
     /* top: 285px; */
     /* left: 42px; */
-    left: 7.5%;
-    padding-top: 45%;
+    margin-left: -12%;
+    padding-top: 24%;
     position: center;
 }
 
@@ -347,7 +357,7 @@ img {
 
 @media (min-width: 480px) and (max-width: 500px) {
     h2 {
-        padding-bottom: 110px;
+        padding-bottom: 100px;
         margin-bottom: 0px;
     }
 }
@@ -364,7 +374,7 @@ img {
 
 @media (min-width: 520px) and (max-width: 540px) {
     h1 {
-        padding-top: 30px;
+        padding-top: 20px;
     }
     h2 {
         padding-bottom: 170px;
@@ -374,11 +384,11 @@ img {
 
 @media (min-width: 540px) and (max-width: 620px) {
     h1 {
-        font-size: 1.2em;
-        padding-top: 30px;
+        font-size: 1.1em;
+        padding-top: 20px;
     }
     h3 {
-        font-size: 1em;
+        font-size: .8em;
     }
     h2 {
         font-size: 0.8em;
@@ -415,14 +425,14 @@ img {
 
 @media (min-width: 620px) and (max-width: 723px) {
     h1 {
-        font-size: 1.4em;
-        padding-top: 30px;
-    }
-    h3 {
+        padding-top: 15px;
         font-size: 1.1em;
     }
+    h3 {
+        font-size: .9em;
+    }
     h2 {
-        font-size: 1em;
+        font-size: .9em;
         margin-bottom: 0px;
     }
 }
@@ -450,7 +460,7 @@ img {
 
 @media (min-width: 680px) and (max-width: 700px) {
     h1 {
-        padding-top: 40px;
+        padding-top: 30px;
     }
     h2 {
         padding-bottom: 140px;
@@ -458,17 +468,20 @@ img {
     }
 }
 
-@media (min-width: 700px) and (max-width: 720px) {
+@media (min-width: 700px) and (max-width: 730px) {
+    h1 {
+        padding-top: 50px;
+    }
     h2 {
         padding-bottom: 160px;
         margin-bottom: 0px;
-    }
+        font-size: 1em;
 }
 
-@media (min-width: 720px) and (max-width: 750px) {
+@media (min-width: 730px) and (max-width: 750px) {
     h1 {
         font-size: 1.5em;
-        padding-top: 40px;
+        padding-top: 70px;
     }
     h3 {
         font-size: 1.2em;
@@ -497,11 +510,6 @@ img {
         margin-right: auto;
         margin-bottom: -8px;
     }
-    #shortstory1 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
     #questions {
         display: block;
         margin-left: auto;
@@ -509,191 +517,192 @@ img {
     }
     }
 
-@media (max-width: 720px) {
-    .buttons001 {
-        height: 60px;
+    @media (max-width: 720px) {
+        .buttons001 {
+            height: 40px;
+        }
+        .buttons002 {
+            height: 40px;
+        }
     }
-    .buttons002 {
-        height: 60px;
+    
+    @media (max-width: 700px) {
+        .buttons001 {
+            height: 39px;
+        }
+        .buttons002 {
+            height: 39px;
+        }
     }
-}
-
-@media (max-width: 700px) {
-    .buttons001 {
-        height: 59px;
+    
+    @media (max-width: 680px) {
+        .buttons001 {
+            height: 20px;
+        }
+        .buttons002 {
+            height: 20px;
+        }
     }
-    .buttons002 {
-        height: 59px;
+    
+    @media (max-width: 660px) {
+        .buttons001 {
+            height: 20px;
+        }
+        .buttons002 {
+            height: 20px;
+        }
     }
-}
-
-@media (max-width: 680px) {
-    .buttons001 {
-        height: 57px;
+    
+    @media (max-width: 640px) {
+        .buttons001 {
+            height: 20px;
+        }
+        .buttons002 {
+            height: 20px;
+        }
     }
-    .buttons002 {
-        height: 57px;
+    
+    @media (max-width: 620px) {
+        .buttons001 {
+            height: 20px;
+        }
+        .buttons002 {
+            height: 20px;
+        }
     }
-}
-
-@media (max-width: 660px) {
-    .buttons001 {
-        height: 55px;
+    
+    @media (max-width: 600px) {
+        .buttons001 {
+            height: 20px;
+        }
+        .buttons002 {
+            height: 20px;
+        }
     }
-    .buttons002 {
-        height: 55px;
+    
+    @media (max-width: 580px) {
+        .buttons001 {
+            height: 20px;
+        }
+        .buttons002 {
+            height: 20px;
+        }
     }
-}
-
-@media (max-width: 640px) {
-    .buttons001 {
-        height: 53px;
+    
+    @media (max-width: 560px) {
+        .buttons001 {
+            height: 20px;
+        }
+        .buttons002 {
+            height: 20px;
+        }
     }
-    .buttons002 {
-        height: 53px;
+    
+    @media (max-width: 520px) {
+        .buttons001 {
+            height: 20px;
+        }
+        .buttons002 {
+            height: 20px;
+        }
     }
-}
-
-@media (max-width: 620px) {
-    .buttons001 {
-        height: 51px;
+    
+    @media (max-width: 500px) {
+        .buttons001 {
+            height: 20px;
+        }
+        .buttons002 {
+            height: 20px;
+        }
     }
-    .buttons002 {
-        height: 51px;
+    
+    @media (max-width: 480px) {
+        .buttons001 {
+            height: 20px;
+        }
+        .buttons002 {
+            height: 20px;
+        }
     }
-}
-
-@media (max-width: 600px) {
-    .buttons001 {
-        height: 49px;
+    
+    @media (max-width: 460px) {
+        .buttons001 {
+            height: 20px;
+        }
+        .buttons002 {
+            height: 20px;
+        }
     }
-    .buttons002 {
-        height: 49px;
+    
+    @media (max-width: 420px) {
+        .buttons001 {
+            height: 20px;
+        }
+        .buttons002 {
+            height: 20px;
+        }
     }
-}
-
-@media (max-width: 580px) {
-    .buttons001 {
-        height: 47px;
+    
+    @media (max-width: 400px) {
+        .buttons001 {
+            height: 20px;
+        }
+        .buttons002 {
+            height: 20px;
+        }
     }
-    .buttons002 {
-        height: 47px;
+    
+    @media (max-width: 380px) {
+        .buttons001 {
+            height: 20px;
+        }
+        .buttons002 {
+            height: 20px;
+        }
     }
-}
-
-@media (max-width: 560px) {
-    .buttons001 {
-        height: 45px;
+    
+    @media (max-width: 360px) {
+        .buttons001 {
+            height: 20px;
+        }
+        .buttons002 {
+            height: 20px;
+        }
     }
-    .buttons002 {
-        height: 45px;
+    
+    @media (max-width: 340px) {
+        .buttons001 {
+            height: 28px;
+        }
+        .buttons002 {
+            height: 28px;
+        }
     }
-}
-
-@media (max-width: 520px) {
-    .buttons001 {
-        height: 43px;
+    
+    @media (max-width: 320px) {
+        .buttons001 {
+            height: 26px;
+        }
+        .buttons002 {
+            height: 26px;
+        }
     }
-    .buttons002 {
-        height: 43px;
+    
+    @media (max-width: 290px) {
+        .buttons001 {
+            height: 24px;
+        }
+        .buttons002 {
+            height: 24px;
+        }
     }
-}
-
-@media (max-width: 500px) {
-    .buttons001 {
-        height: 41px;
-    }
-    .buttons002 {
-        height: 41px;
-    }
-}
-
-@media (max-width: 480px) {
-    .buttons001 {
-        height: 39px;
-    }
-    .buttons002 {
-        height: 39px;
-    }
-}
-
-@media (max-width: 460px) {
-    .buttons001 {
-        height: 37px;
-    }
-    .buttons002 {
-        height: 37px;
-    }
-}
-
-@media (max-width: 420px) {
-    .buttons001 {
-        height: 35px;
-    }
-    .buttons002 {
-        height: 35px;
-    }
-}
-
-@media (max-width: 400px) {
-    .buttons001 {
-        height: 33px;
-    }
-    .buttons002 {
-        height: 33px;
-    }
-}
-
-@media (max-width: 380px) {
-    .buttons001 {
-        height: 31px;
-    }
-    .buttons002 {
-        height: 31px;
-    }
-}
-
-@media (max-width: 360px) {
-    .buttons001 {
-        height: 30px;
-    }
-    .buttons002 {
-        height: 30px;
-    }
-}
-
-@media (max-width: 340px) {
-    .buttons001 {
-        height: 28px;
-    }
-    .buttons002 {
-        height: 28px;
-    }
-}
-
-@media (max-width: 320px) {
-    .buttons001 {
-        height: 26px;
-    }
-    .buttons002 {
-        height: 26px;
-    }
-}
-
-@media (max-width: 290px) {
-    .buttons001 {
-        height: 24px;
-    }
-    .buttons002 {
-        height: 24px;
-    }
-}
-
-@media (max-width: 260px) {
-    .buttons001 {
-        height: 22px;
-    }
-    .buttons002 {
-        height: 22px;
+    
+    @media (max-width: 260px) {
+        .buttons001 {
+            height: 22px;
+        }
+        .buttons002 {
+            height: 22px;
+        }
     }
 }

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="maze.css"> <!--neha's css file-->
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Sigmar One' rel='stylesheet'>
   <title>SFAC 2020 Magazine</title>
@@ -14,36 +15,47 @@
   <script>
     function changeImage1() {
       var img = document.getElementById("image");
-      img.src = "assets/factsanswers.png";
+      img.src = "assets/answers.png";
       return false;
     }
 
     function changeImage2() {
       var img = document.getElementById("image");
-      img.src = "assets/funfacts.png";
+      img.src = "assets/trivia.png";
       return false;
     }
   </script>
+
+  <script src="maze.js"></script> <!--neha's js file-->
+
+  <script>
+  window.addEventListener("DOMContentLoaded", function(e) {
+      var maze = new Mazing();
+      maze.setChildMode();
+    }, false);
+  </script>
+
 </head>
 
 <body>
   <div class="img-container">
-    <img class="img-fluid" src="assets/Cover.jpg" alt="SFAC 2019 Magazine Cover">
+    <img class="img-fluid" src="assets/1 (F) - Piper Epstein - Cover.png" alt="SFAC 2021 Winter Magazine Cover">
   </div>
 
   <div>
     <div id="whoweare">
       <div class="img-container">
-        <img class="img-fluid" src="assets/2 - (F) Who We Are.png" alt="Who We Are">
+        <img class="img-fluid" src="assets/2 (F)- Who We Are .png" alt="Who We Are">
       </div>
     </div>
 
     <div id="toc" class="img-container">
       <br>
       <br>
+      <br>
+      <br>
       <h1>
         Table of Contents
-        <br>
       </h1>
       <h3>
         Click on the title to go directly to that page!
@@ -54,61 +66,61 @@
           <br>
           <a href=#toc>Table of Contents</a>
           <br>
-          <a href=#shortstory1>Sunshinecrow Short Story</a>
+          <a href=#dinosaurtypes>Dinosaur Types</a>
           <br>
-          <a href=#poem1>Fall Festivity Poem</a>
+          <a href=#funfacts>Fun Facts</a>
           <br>
-          <a href=#shortstory2>On the Mighty Ferris Short Story</a>
+          <a href=#dinosaurjokes>Dinosaur Jokes</a>
           <br>
-          <a href=#poem2> Fall Feeling Poem</a>
+          <a href=#iceageanimals>Animals of the Ice Age</a>
           <br>
-          <a href=#art> Carnival Dream Artwork</a>
+          <a href=#dinosaursize>Dinosaur Size Comparison</a>
           <br>
-          <a href=#appleturnover> Apple Turnovers Recipe</a>
+          <a href=#moviereview>Movie Review</a>
           <br>
-          <a href=#funnelcake> Funnel Cakes Recipe</a>
+          <a href=#crossword>Crossword</a>
           <br>
-          <a href=#pumpkincookies> Pumpkin Chocolate Chip Cookies Recipe</a>
+          <a href=#arctictrivia>Arctic Animals Trivia</a>
           <br>
-          <a href=#applesauce> Applesauce Recipe</a>
+          <a href=#dinomaze>Dino Maze</a>
           <br>
-          <a href=#corndog> Corn Dogs Recipe</a>
+          <a href=#hiddenpictures>Hidden Pictures</a>
           <br>
-          <a href=#treasurehunt> Carnival Treasure Hunt</a>
+          <a href=#spotdifferences>Spot the Differences</a>
           <br>
-          <a href=#crossword> Fall Crossword</a>
+          <a href=#dinotrivia>Dino Trivia</a>
           <br>
-          <a href=#wordsearch> Fall Festival Word Search</a>
+          <a href=#draw>How to Draw a Dinosaur</a>
           <br>
-          <a href=#scarecrowcraft> Scarecrow Craft</a>
+          <a href=#dinosaurcrafts>Dinosaur Crafts</a>
           <br>
-          <a href=#pumpkingdrawing> How to Draw a Pumpkin</a>
+          <a href=#pterodactyl>Pterodactyl</a>
           <br>
-          <a href=#falldrawings> Fall Drawings</a>
+          <a href=#stegosaurus>Stegosaurus</a>
           <br>
-          <a href=#spotdifferences> Spot the Differences</a>
+          <a href=#digitalart>Dinosaur Digital Art</a>
           <br>
-          <a href=#spotitems> Spot the Items</a>
+          <a href=#trackcookies>Dinosaur Track Cookies</a>
           <br>
-          <a href=#personality> Autumn Personality Quiz</a>
+          <a href=#creamcheese>Cream Cheese Penguins</a>
           <br>
-          <a href=#thisorthat> This or That</a>
+          <a href=#lunch>Dinosaur Lunch</a>
           <br>
-          <a href=#carnivalactivities> Top 10 Fall Festival Ideas</a>
+          <a href=#dessert>Dinosaur Dessert</a>
           <br>
-          <a href=#funfacts1> Halloween Trivia</a>
+          <a href=#dirtdessert>Dino Dirt Desserts</a>
           <br>
-          <a href=#funfacts2> Fun Fall Facts</a>
+          <a href=#fillinblank>Fill in the Blank</a>
           <br>
-          <a href=#fallriddles> Spooktacular Riddles</a>
+          <a href=#colorin>Dinosaur Color-in</a>
           <br>
-          <a href=#carnivalfoods> Top 10 Carnival Foods</a>
+          <a href=#coloringpage>Dinosaur Coloring Page</a>
           <br>
-          <a href=#connectdots> Connect the Dots and Color</a>
+          <a href=#woolymaze>Maze</a>
           <br>
-          <a href=#colorin> Color in the Picture</a>
+          <a href=#matching>Dinosaur Matching</a>
           <br>
-          <a href=#cornmaze> Corn Maze</a>
+          <a href=#illustrations>A Series of Dinosaur Illustrations</a>
           <br>
           <a href=#questions> Questions and Comments</a>
           <br>
@@ -116,296 +128,342 @@
       </u>
     </div>
 
-    <div id="shortstory1">
+    <div id="dinosaurtypes">
       <div class="img-container">
-        <img class="img-fluid" src="assets/Short Story 1.jpg" alt="Short Story 1">
-      </div>
-      <div class="img-container">
-        <img class="img-fluid" src="assets/Short Story 2.jpg" alt="Short Story 2">
+        <img class="img-fluid" src="assets/4 (F) Kailey Epstein - Dino Types.png" alt="Dinosaur Types">
       </div>
     </div>
 
-    <div id="poem1">
+    <div id="funfacts">
       <div class="img-container">
-        <img class="img-fluid" src="assets/aleenpoem.png" alt="Poem 1">
+        <img class="img-fluid" src="assets/5 (F)- Gloria Yao- Ice Age Fun Facts!.png" alt="Fun facts">
       </div>
     </div>
 
-    <div id="shortstory2">
+    <div id="dinosaurjokes">
       <div class="img-container">
-        <img class="img-fluid" src="assets/1.png" alt="Short Story part 1">
-      </div>
-      <div class="img-container">
-        <img class="img-fluid" src="assets/2.png" alt="Short Story part 2">
-      </div>
-      <div class="img-container">
-        <img class="img-fluid" src="assets/3.png" alt="Short Story part 3">
+        <img class="img-fluid" src="assets/6 (F) Skylar Holland - Dinosaur Jokes.jpg" alt="Dinosaur Jokes">
       </div>
     </div>
 
-    <div id="poem2">
+    <div id="iceageanimals">
       <div class="img-container">
-        <img class="img-fluid" src="assets/isabellapoem.png" alt="Poem 2">
+        <img class="img-fluid" src="assets/7 (F) Nicole Feng - Animals of the Ice Age.png" alt="Animals of the Ice Age">
       </div>
     </div>
 
-    <div id="art">
+    <div id="dinosaursize">
       <div class="img-container">
-        <img class="img-fluid" src="assets/may-art.png" alt="Art">
+        <img class="img-fluid" src="assets/8- (f) Isabella Lang - Dinosaur Size Comparison.png" alt="Dinosaur Size Comparison">
       </div>
     </div>
 
-    <div id="appleturnover">
+    <div id="moviereview">
       <div class="img-container">
-        <img class="img-fluid" src="assets/appleturnover.png" alt="Apple Turnover Recipe">
+        <img class="img-fluid" src="assets/9 (F)- Neha Vardhaman- Movie Reviews.png" alt="Movie Reviews">
       </div>
     </div>
 
-    <div id="funnelcake">
-      <div class="img-container">
-        <img class="img-fluid" src="assets/funnelcake.png" alt="Funnel Cake Recipe">
+    <div class="img-container">
+      <div class="container1">
+      <div class="center">
+      <div class="boxes">
+        <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+        <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><br />
+        <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+        <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+        <input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+        <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+        <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+        <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+        <input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+        <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
       </div>
     </div>
-
-    <div id="pumpkincookies">
-      <div class="img-container">
-        <img class="img-fluid" src="assets/pumpkincookies.png" alt="Pumpkin Cookies Recipe">
-      </div>
     </div>
+  </div>
 
-    <div id="applesauce">
+    <div id="crossword">
       <div class="img-container">
-        <img class="img-fluid" src="assets/applesaucerecipe.png" alt="Applesauce Recipe">
+          <img class="img-fluid" src="assets/10- (f) Ridhima Dasari- Super Dino Crossword!.png" alt="Crossword">
       </div>
-    </div>
+</div>
 
-    <div id="corndog">
+    <div id="arctictrivia">
       <div class="img-container">
-        <img class="img-fluid" src="assets/13a - (F) Gloria Yao - Corn Dogs Recipe.png" alt="Corn Dog 1">
-      </div>
-      <div class="img-container">
-        <img class="img-fluid" src="assets/13b - (F) Gloria Yao - Corn Dogs Recipe.png" alt="Corn Dog 2">
-      </div>
-    </div>
-
-    <div id="treasurehunt">
-      <div class="img-container">
-        <img class="img-fluid" src="assets/14 - (F) Julianna Wong - Treasure Hunt.png" alt="Treasure Hunt">
+        <img class="img-fluid" src="assets/11 (F) Nicole Zhao - Arctic Animal Trivia.png" alt="Arctic Animal Trivia">
         <b>
-          <a href="https://my.visme.co/projects/rx1j88zz-smiles-for-a-child-november" target="_blank" id="start">
+          <a href="https://www.canva.com/design/DAETy9lB5Fk/8RjRrGNIeLjAJwWCcyfa0w/view?utm_content=DAETy9lB5Fk&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" target="_blank" id="start">
             <p class="text-over-img">START</p>
           </a>
         </b>
       </div>
+
+    <div id="dinomaze">
+        <style>
+    #maze-bg {
+        background-image: url("assets/mazebg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 0px;
+    }
+  </style>
+  <div id="maze-bg" class="img-container" id="mazetext">
+    <div id="mazetitle">
+      Help the dinosaur &#x1F995; eat the plant and find its egg!
+    </div>
+    <div id = "mazetext">
+      <br>
+      Instructions: Starting at the bottom right corner, make your way through the maze by pressing the arrow keys. Try to avoid the T-Rexes &#x1F996; because if you touch them you will lose points.
+      You must go to the plant &#x1F331; to eat before making your way the egg &#x1F95A;. Gather treasure &#x1F4B0; along the way to earn BONUS points!
+  </div>
+    <div style="text-align: center;">
+      <div id="maze_container">
+        <div id="maze" data-steps="192">
+        <div><div class="wall"></div><div class="door exit"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="door"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="nubbin wall"></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="nubbin wall"></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="nubbin wall"></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall sentinel"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="door"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div class="wall"></div><div class="key"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall sentinel"></div><div></div><div></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="door"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+        <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="door entrance"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+        </div>
+      </div>
+      <div id="maze_output">
+        <div id="maze_score"><!-- --></div>
+        <div id="maze_message"><!-- --></div>
+      </div>
+    </div>
+  </div>
+
     </div>
 
-    <div id="crossword">
+    <div id="hiddenpictures">
       <div class="img-container">
-        <div class="container1">
-          <img src="" class="center">
-          <div class="boxes">
-            <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1"
-              style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text"
-              maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002"
-              disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)"
-              class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input
-              onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1"
-              style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text"
-              maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001"
-              type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)"
-              class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input
-              onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1"
-              style='text-transform:uppercase' /><br />
-            <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1"
-              style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text"
-              maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002"
-              disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)"
-              class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input
-              onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1"
-              style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002"
-              disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)"
-              class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input
-              onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1"
-              style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002"
-              disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
-            <input onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1"
-              style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text"
-              maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001"
-              type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)"
-              class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input
-              onekeydown="keyCode(event)" class="buttons001" type="text" maxlength="1"
-              style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text"
-              maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001"
-              type="text" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)"
-              class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input
-              onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1"
-              style='text-transform:uppercase' /><br />
-            <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1"
-              style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text"
-              maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002"
-              disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)"
-              class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input
-              onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1"
-              style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002"
-              disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)"
-              class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input
-              onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1"
-              style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002"
-              disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
-            <input onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1"
-              style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons001" type="text"
-              maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002"
-              disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)"
-              class="buttons001" type="text" maxlength="1" style='text-transform:uppercase' /><input
-              onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1"
-              style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002"
-              disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input onekeydown="keyCode(event)"
-              class="buttons002" disabled="disabled" maxlength="1" style='text-transform:uppercase' /><input
-              onekeydown="keyCode(event)" class="buttons002" disabled="disabled" maxlength="1"
-              style='text-transform:uppercase' /><input onekeydown="keyCode(event)" class="buttons002"
-              disabled="disabled" maxlength="1" style='text-transform:uppercase' /><br />
+        <img class="img-fluid" src="assets/13 (F) Jillian Epstein - Hidden Pictures.png" alt="Hidden Pictures">
+      </div>
+    </div>
+
+    <div id="spotdifferences">
+      <div class="img-container">
+        <img class="img-fluid" src="assets/14 (F) Emma Matthew - Spot the Differences.png" alt="Spot the Differences">
+      </div>
+    </div>
+
+    <div id="dinotrivia">
+      <div class="img-container">
+        <img class="img-fluid" id="image" src="assets/trivia.png" alt="Dino Trivia 1">
+        <div id="factbuttons">
+          <div id="answer1">
+            <button id="clickme" onclick="changeImage1();">Click to show the answers!</button>
           </div>
-          <img class="img-fluid" src="assets/15 - (F) Ridhima Dasari - Crossword.png" alt="Crossword">
-        </div>
-      </div>
-
-      <div id="wordsearch">
-        <div class="img-container">
-          <img class="img-fluid" src="assets/16 - (F) joyce li - wordsearch.png" alt="Word Search">
-        <div class="printables">
-          Click
-          <u><a href="https://thewordsearch.com/puzzle/1702040/fall-festival-word-search/"
-              target="_blank">here</a></u>
-          to play this Word Search Activity! 
-        </div>
-      </div>
-      </div>
-
-      <div id="scarecrowcraft">
-        <div class="img-container">
-          <img class="img-fluid" src="assets/scarecrowcraft.jpg" alt="Scarecrow Craft">
-        </div>
-      </div>
-
-      <div id="pumpkingdrawing">
-        <div class="img-container">
-          <img class="img-fluid" src="assets/pumpkingdrawing.jpg" alt="How to Draw a Pumpkin">
-        </div>
-      </div>
-
-      <div id="falldrawings">
-        <div class="img-container">
-          <img class="img-fluid" src="assets/19 - (F) Amelia Barth- Fall Drawings.png" alt="Fall Drawings">
-        </div>
-      </div>
-
-      <div id="spotdifferences">
-        <div class="img-container">
-          <img class="img-fluid" src="assets/20 - (F) Emma Matthew- Spot the Differences!.png"
-            alt="Spot the Differences">
-        </div>
-      </div>
-
-      <div id="spotitems">
-        <div class="img-container">
-          <img class="img-fluid" src="assets/spotdifferencekiomi.jpg" alt="Spot the Items">
-        </div>
-      </div>
-
-      <div id="personality">
-        <div class="img-container">
-          <img class="img-fluid" src="assets/22 (f) personality quiz, amelia barth .png" alt="Personality Quiz">
-        </div>
-      </div>
-
-      <div id="thisorthat">
-        <div class="img-container">
-          <img class="img-fluid" src="assets/23 - (F) Haley Yingling- This or That.png" alt="This or That">
-        </div>
-      </div>
-
-      <div id="carnivalactivities">
-        <div class="img-container">
-          <img class="img-fluid" src="assets/24 - (F) Gloria Yao- Fall Carnival Activities.png"
-            alt="Carnival Activities">
-        </div>
-      </div>
-
-      <div id="funfacts1">
-        <div class="img-container">
-          <img class="img-fluid" id="image" src="assets/funfacts.png" alt="Fun Facts">
-          <div id="factbuttons">
-            <div id="answer1">
-              <button id="clickme" onclick="changeImage1();">Click to show the answers!</button>
-            </div>
-            <div id="maze">
-              <button id="clickme" onclick="changeImage2();">Click to show the facts!</button>
-            </div>
+          <div id="answer2">
+            <button id="clickme" onclick="changeImage2();">Click to show the facts!</button>
           </div>
         </div>
       </div>
+    </div>
 
-      <div id="funfacts2">
+      <div id="draw">
         <div class="img-container">
-          <img class="img-fluid" src="assets/funfacts2.jpg" alt="Fun Facts 2">
+          <img class="img-fluid" src="assets/16 (F) Skylar Holland - How to Draw a Dinosaur.jpg" alt="Draw Dinosaur">
         </div>
       </div>
 
-      <div id="fallriddles">
+      <div id="dinosaurcrafts">
         <div class="img-container">
-          <img class="img-fluid" src="assets/27 - (F) Neha Vardhaman - Fall Riddles.png" alt="Fall Riddles">
+          <img class="img-fluid" src="assets/17a (F) Pooja Murali- Dinosaur Crafts.png" alt="Dinosaur Craft 1">
         </div>
       </div>
 
-      <div id="carnivalfoods">
+      <div id="pterodactyl">
         <div class="img-container">
-          <img class="img-fluid" src="assets/28 - (F) Gloria Yao - Top 10 Carnival Foods.png" alt="Carnival Foods">
+          <img class="img-fluid" src="assets/18 (F) May Zheng- Pterodactyl Illustration-1.png" alt="Pterodactyl">
         </div>
       </div>
 
-      <div id="connectdots">
+      <div id="stegosaurus">
         <div class="img-container">
-          <img class="img-fluid" src="assets/29 - (F) Joyce Li, Connect the Dots and Color! .png" alt="Fun Facts 2">
+          <img class="img-fluid" src="assets/19 (f) may zheng- Stegosaurus Illustration-1.png" alt="Stegosaurus">
+        </div>
+      </div>
+
+      <div id="digitalart">
+        <div class="img-container">
+          <img class="img-fluid" src="assets/20 (F) julianna wong - dino digi art.png"
+            alt="Dinosaur digital art">
+        </div>
+      </div>
+
+      <div id="trackcookies">
+        <div class="img-container">
+          <img class="img-fluid" src="assets/21 (F) Kailey Epstein - Dinosaur Track Cookies.png" alt="Dinosaur Track Cookies">
+        </div>
+      </div>
+
+      <div id="creamcheese">
+        <div class="img-container">
+          <img class="img-fluid" src="assets/22(F) Gloria Yao - Cream Cheese Penguins - -1.png" alt="Cream Cheese Penguins">
+        </div>
+      </div>
+
+      <div id="lunch">
+        <div class="img-container">
+          <img class="img-fluid" src="assets/23 (F)- Gloria Yao- Dinosaur Lunch- -1.png" alt="Dinosaur Lunch">
+        </div>
+      </div>
+
+      <div id="dessert">
+        <div class="img-container">
+          <img class="img-fluid" src="assets/24- (f) Gloria Yao- Dinosaur Dessert Bar Recipe -1.png"
+            alt="Dinosaur Dessert Bar">
+        </div>
+      </div>
+
+      <div id="dirtdessert">
+        <div class="img-container">
+          <img class="img-fluid" id="image" src="assets/25 (F)- Julianna Wong- Dirt Dessert--1.png" alt="Dino Dessert">
+        </div>
+      </div>
+
+      <div id="fillinblank">
+        <div class="img-container">
+          <img class="img-fluid" src="assets/26 (F) Isabella Lang - Dinosaur Fill in the Blanks-1.png" alt="Dinosaur Fill in the Blanks">
           <div class="printables">
             Click
-            <u><a href="https://drive.google.com/file/d/10VtnKsZHXOpjGvVzxGcUvwEIug6Yi-PO/view?usp=sharing"
+            <u><a href="https://drive.google.com/file/d/1tvQJEh-LbwjwI6QNGaXXr9PmXXT9e0dA/view?usp=sharing"
                 target="_blank">here</a></u>
-            to print out this Connect the Dots and Color activity!
+            to print out this Dinosaur Fill in the Blanks Activity!
           </div>
         </div>
-
       </div>
 
       <div id="colorin">
         <div class="img-container">
-          <img class="img-fluid" src="assets/colorin.jpg" alt="Fun Facts 2">
+          <img class="img-fluid" src="assets/27 (F) Skylar Holland - Dinosaur Color-in-1.png" alt="Dinosaur Color-in">
           <div class="printables">
             Click
-            <u><a href="https://drive.google.com/file/d/1pHr3-Us8f3ZXeKE0IuClkIl0I8mvhBIc/view?usp=sharing"
+            <u><a href="https://drive.google.com/file/d/1FUVgS8hOI3ZiSphMm-eQ1lwwera-Sj6J/view?usp=sharing"
                 target="_blank">here</a></u>
-            to print out this Color in the Picture activity!
+            to print out this Dinosaur Color-in Activity!
           </div>
         </div>
       </div>
 
-      <div id="cornmaze">
+      <div id="coloringpage">
         <div class="img-container">
-          <img class="img-fluid" id="image" src="assets/cornmaze.png" alt="Corn Maze">
+          <img class="img-fluid" src="assets/28- Amelia Barth-Dinosaur Coloring Page-1.png" alt="Dinosaur Coloring Page">
           <div class="printables">
             Click
-            <u><a href="https://drive.google.com/file/d/1yfIqYrAnR2rgC-XcgRXBzd0G10Wgwxry/view?usp=sharing"
+            <u><a href="https://drive.google.com/file/d/1eiRVXpPKVDo3nLCOqp8fDOrxwP6yd5T0/view?usp=sharing"
                 target="_blank">here</a></u>
-            to print out this Corn Maze activity and
-            <u><a href="https://drive.google.com/file/d/1aRFt-4_VoLH-PrSqvyvW33mr2fyNk9AZ/view?usp=sharing"
-                target="_blank">here</a></u>
-            to see the answer key!
+            to print out this Dinosaur Coloring Page Activity!
           </div>
+        </div>
+      </div>
+
+      <div id="woolymaze">
+        <div class="img-container">
+          <img class="img-fluid" src="assets/29 (F) Lanie Hymowitz - Maze - -1.png" alt="Maze">
+          <div class="printables">
+            Click
+            <u><a href="https://drive.google.com/file/d/1DpQuw7x9Z26RtGZGKs4Iun6lPb_UJwKz/view?usp=sharing"
+                target="_blank">here</a></u>
+            to print out this Maze Activity!
+          </div>
+        </div>
+
+      </div>
+
+      <div id="matching">
+        <div class="img-container">
+          <img class="img-fluid" src="assets/30- Isabella Lang- Dinosaur Matching game-1.png" alt="Dinosaur Matching Game">
+          <div class="printables">
+            Click
+            <u><a href="https://drive.google.com/file/d/1fDIxmhpReT70BPkbpB-fH_txJW-ApYum/view?usp=sharing"
+                target="_blank">here</a></u>
+            to print out this Dinosaur Matching Activity!
+          </div>
+        </div>
+      </div>
+
+      <div id="illustrations">
+        <div class="img-container">
+          <img class="img-fluid" id="image" src="assets/31a (f) echo chen dino illustrations-1.png" alt="Illustration 1">
+        </div>
+      </div>
+
+      <div id="illustrations">
+        <div class="img-container">
+          <img class="img-fluid" id="image" src="assets/31b (f) echo chen dino illustrations-2.png" alt="Illustration 2">
+        </div>
+      </div>
+
+      <div id="illustrations">
+        <div class="img-container">
+          <img class="img-fluid" id="image" src="assets/31c (f) echo chen dino illustrations-3.png" alt="Illustration 3">
+        </div>
+      </div>
+
+      <div id="illustrations">
+        <div class="img-container">
+          <img class="img-fluid" id="image" src="assets/31d (f) echo chen dino illustrations-4.png" alt="Illustration 4">
+        </div>
+      </div>
+
+      <div id="illustrations">
+        <div class="img-container">
+          <img class="img-fluid" id="image" src="assets/31e (f) echo chen dino illustrations-5.png" alt="Illustration 5">
+        </div>
+      </div>
+
+      <div id="illustrations">
+        <div class="img-container">
+          <img class="img-fluid" id="image" src="assets/31f (f) echo chen dino illustrations-6.png" alt="Illustration 6">
+        </div>
+      </div>
+
+      <div id="illustrations">
+        <div class="img-container">
+          <img class="img-fluid" id="image" src="assets/31g (f) echo chen dino illustrations-7.png" alt="Illustration 7">
+        </div>
+      </div>
+
+      <div id="illustrations">
+        <div class="img-container">
+          <img class="img-fluid" id="image" src="assets/31h (f) echo chen dino illustrations-8.png" alt="Illustration 8">
         </div>
       </div>
 
       <div id="questions">
         <div class="img-container">
-          <img class="img-fluid" src="assets/qanda.png" alt="Questions and Comments">
+          <img class="img-fluid" src="assets/32 (F) - Questions and Comments.png" alt="Questions and Comments">
         </div>
       </div>
 
@@ -425,22 +483,22 @@
               <a class="nav-link" href="#toc">Table of Contents <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#shortstory1">Writing <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#dinosaurtypes">Reading <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#art">Art <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#crossword">Activities <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#appleturnover">Recipes <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#pterodactyl">Artwork <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#treasurehunt">Activities <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#trackcookies">Recipes <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#carnivalactivities">Fall Specials <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#fillinblank">Printables <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#connectdots">Printables <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#illustrations">Featured Artist <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#questions">Questions and Comments <span class="sr-only">(current)</span></a>
