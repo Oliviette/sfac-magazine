@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,112 +9,42 @@
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Sigmar One' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="neha_spring/zoom.css">
-  <link rel="stylesheet" href="neha_spring/unsc.css">
-  <title>SFAC 2021 Magazine</title>
-
-  <style>
-    input {
-      border-bottom: 1px solid black;
-      text-transform: uppercase;
-      display: inline-block;
-      width: 4vh;
-      height: 4vh;
-      position: relative;
-      top: 0em;
-      left: 0em;
-      text-align: center;
-    }
-
-    label {
-      display: inline-block;
-      width: 4vh;
-      height: 4vh;
-      margin-right: -0.1em;
-      text-align: center;
-      font-size: 2vh;
-    }
-  </style>
-
-  <script>
-    var index = 0;
-    var index2 = 0;
-    var imgsList = ["cars", "boo", "buzz", "up", "elastigirl", "rat", "brave", "crush"]
-    var labelList = ["Click here to zoom out for the answer!", "Click here to zoom back in!"]
-    var instList = ["Can you guess who/what is in the picture and which Pixar movie it's from?",
-      "It's Lightning McQueen from Cars!",
-      "It's Boo from Monsters Inc.!",
-      "It's Buzz from Toy Story!",
-      "It's the house from Up!",
-      "It's Elastigirl from The Incredibles!",
-      "It's ratatouille from Ratatouille!",
-      "It's Merida from Brave!",
-      "It's Crush from Finding Nemo!"
-    ]
-
-    function changeImage() {
-      if (index == 0) {
-        index = 1;
-      } else index = 0;
-      var image1 = document.getElementById("myImage");
-      image1.src = "neha_spring/" + imgsList[index2] + (index + 1) + ".jpg";
-      //image1.src = imgsList[index2] + (index + 1) + ".jpg";
-      document.getElementById("clickme").innerHTML = labelList[index];
-      document.getElementById("inst").innerHTML = instList[index * (index2 + 1)];
-    }
-
-    function goNext() {
-      if (index2 == (imgsList.length - 1));
-      else index2++;
-      index = 1;
-      changeImage();
-    }
-
-    function goBack() {
-      if (index2 == 0);
-      else index2--;
-      index = 1;
-      changeImage();
-    }
-  </script>
-  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Sigmar One' rel='stylesheet'>
-  <title>SFAC 2020 Magazine</title>
-
+  <link rel="stylesheet" href="summermaze.css">
+  <title>SFAC Summer 2021 Magazine</title>
   <script>
     function changeImage1() {
       var img = document.getElementById("image");
-      img.src = "assets/spring2021/answer.png";
+      img.src = "assets/summer2021/9b - Ayanna Jaikishen - Space Trivia Answer key (1).png";
       return false;
     }
 
     function changeImage2() {
       var img = document.getElementById("image");
-      img.src = "assets/spring2021/maze.png";
+      img.src = "assets/summer2021/9a - Ayanna Jaikishen - Outer space trivia.png";
       return false;
     }
   </script>
-
-  <script src="maze.js"></script> <!--neha's js file-->
-
-  <script>
-  window.addEventListener("DOMContentLoaded", function(e) {
-      var maze = new Mazing();
-      maze.setChildMode();
-    }, false);
-  </script>
-
 </head>
+
+<script src="summermaze.js"></script> <!--neha's js file-->
+<script>
+
+  window.addEventListener("DOMContentLoaded", function(e) {
+    var maze = new Mazing();
+    maze.setChildMode();
+  }, false);
+
+</script>
 
 <body>
   <div class="img-container">
-    <img class="img-fluid" src="assets/spring2021/cover.jpeg" alt="SFAC 2021 Spring Magazine Cover">
+    <img class="img-fluid" src="assets/summer2021/1 - Cover - Emily Ye - Astronaut in Space Artwork.png" alt="SFAC 2021 Summer Magazine Cover">
   </div>
 
   <div>
     <div id="whoweare">
       <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/2 (F) - Who We Are.png" alt="Who We Are">
+        <img class="img-fluid" src="assets/summer2021/2 - (F)  - Who We Are.png" alt="Who We Are">
       </div>
     </div>
 
@@ -124,10 +53,7 @@
       <br>
       <br>
       <br>
-      <br>
-      <br>
       <h1>
-        Table of Contents
       </h1>
       <h3>
         Click on the title to go directly to that page!
@@ -138,522 +64,257 @@
           <br>
           <a href=#toc>Table of Contents</a>
           <br>
-          <a href=#carspopsicle>Cars Popsicle Sticks Craft</a>
+          <a href=#planetfacts>Planet Fun Facts</a>
           <br>
-          <a href=#oceanslime>Ocean Slime</a>
+          <a href=#food>What Food Do People Eat in Outer SPace</a>
           <br>
-          <a href=#kalimba>Studio Ghibli Kalimba Music Covers</a>
+          <a href=#size>Solar System Size Comparison</a>
           <br>
-          <a href=#cover>Princess Monoke Piano Cover</a>
+          <a href=#jokes>Space Jokes</a>
           <br>
-          <a href=#onigiri>Spirited Away Onigiri Recipe</a>
+          <a href=#trivia>Outer Space Trivia</a>
           <br>
-          <a href=#anman>Spirited Away Anman Recipe</a>
+          <a href=#cake>Galaxy Planet Cake</a>
           <br>
-          <a href=#slinkydog>Toy Story Slinky Dog Treats Recipe</a>
+          <a href=#strawberry>Strawberry Rockets and Rockmelon</a>
           <br>
-          <a href=#potatohead>Mr. and Mrs. Potato Head Cookies Recipe</a>
+          <a href=#cakepops>Over the Moon Cake Pops</a>
           <br>
-          <a href=#ricekrispie>The Incredibles Rice Krispie Treats Recipe</a>
+          <a href=#cupcakes>Solar System Cupcakes</a>
           <br>
-          <a href=#spiritedawayfood>Food from Spirited Away</a>
+          <a href=#jupiter>Fizzing Jupiter Activity</a>
           <br>
-          <a href=#topmovies>Top 10 Pixar Movies</a>
+          <a href=#model>Model of the Solar System DIY</a>
           <br>
-          <a href=#funfacts>Pixar Movie Fun Facts</a>
+          <a href=#design>Design Your Own Planet</a>
           <br>
-          <a href=#coloring>Studio Ghibli Coloring Page</a>
+          <a href=#rocket>Rocket Maze</a>
           <br>
-          <a href=#zoom>Zoomed in Picture Guessing Game</a>
+          <a href=#coloring>Outer Space Coloring Page</a>
           <br>
-          <a href=#unscramble>Pixar Movies Unscramble</a>
+          <a href=#connect>Connect the Dots</a>
           <br>
-          <a href=#spot>Spot the Differences!</a>
+          <a href=#space>Space Maze</a>
           <br>
-          <a href=#poem>Spirited Away Poem</a>
-          <br>
-          <a href=#places>Real Life Places that Inspired Studio Ghibli Movies</a>
-          <br>
-          <a href=#maze>Studio Ghibli Maze</a>
-          <br>
-          <a href=#ghibliart>Studio Ghibli Art</a>
-          <br>
-          <a href=#calciferbreakfast>Howl's Moving Castle Calcifer's Breakfast Art</a>
-          <br>
-          <a href=#mary>Mary and the Witch's Flower Art</a>
-          <br>
-          <a href=#tranquilnight>Tranquil Night Art</a>
-          <br>
-          <a href=#sixthstation>Sixth Station Art</a>
-          <br>
-          <a href=#seapath>Sea Path Art</a>
-          <br>
-          <a href=#howlsleeps>Howl Sleeps Art</a>
-          <br>
-          <a href=#questions> Questions and Comments</a>
+          <a href=#playlist>Outer Space Playlist</a>
           <br>
         </h2>
       </u>
     </div>
 
-    <div id="carspopsicle">
+    <div id="planetfacts">
       <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/4 (F) - Pooja Murali Cars Popsicle Sticks Craft-1.png"
-          alt="Popsicle Sticks Craft 1">
-        <img class="img-fluid" src="assets/spring2021/4 (F) - Pooja Murali Cars Popsicle Sticks Craft-2.png"
-          alt="Popsicle Sticks Craft 2">
+        <img class="img-fluid" src="assets/summer2021/4 - Kailey Epstein - Planet Fun Facts.png"
+          alt="Planet Fun Facts">
       </div>
     </div>
 
-    <div id="oceanslime">
+    <div id="food">
       <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/5 (F) - Pooja Murali Moana Ocean Slime.png" alt="Ocean Slime">
+        <img class="img-fluid" src="assets/summer2021/6 - Gloria Yao - What food people eat in outer space.png" alt="What food people eat in outer space">
       </div>
     </div>
 
-    <div id="kalimba">
+    <div id="size">
+        <div class="img-container">
+            <img class="img-fluid" src="assets/summer2021/7 - Isabella Lang - Solar system size comparison.png" alt="Solar System Size Comparison">
+          </div>
+    </div>
+
+    <div id="jokes">
       <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/6 (F) - Aleen Xue Studio Ghibli Kalimba Music Covers-2.png"
-          alt="Kalimba Covers">
-        <a href="https://drive.google.com/file/d/12cuCpDzwV66NtEOP-zBeOSiCPeIPcjnV/view?usp=sharing" target="_blank"
-          id="start">
-          <p class="text-over-img1">Town with an Ocean View- Kiki's Delivery Service</p>
-          <br>
-          <br>
-          <a href="https://drive.google.com/file/d/1-ieWeGB0KrPC7p75-cKmx-8UPIfPgG4t/view?usp=sharing" target="_blank"
-            id="start">
-            <p class="text-over-img2">Merry-go Round of Life- Howl's Moving Castle</p>
+        <img class="img-fluid" src="assets/summer2021/8-Isabella Lang-Space jokes.png" alt="Space Jokes">
       </div>
     </div>
 
-    <div id="cover">
-      <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/7 (F) - Princess Mononoke Cover.png"
-          alt="Princess Mononoke Cover">
-        <b>
-          <a href="https://drive.google.com/file/d/1xpj2kBEFX4DMpfdaNySzegq5YdHdxQfC/view?usp=sharing" target="_blank"
-            id="start">
-            <p class="text-over-img">Click Here!</p>
-          </a>
-        </b>
+    <div id="trivia">
+    <div class="img-container">
+        <img class="img-fluid" id="image" src="assets/summer2021/9a - Ayanna Jaikishen - Outer space trivia.png" alt="Outer Space Trivia 1">
+        <div id="factbuttons">
+            <br>
+            <div id="answer1">
+            <button id="clickme" onclick="changeImage1();">Click to show the answers!</button>
+            </div>
+            <div id="answer2">
+            <button id="clickme" onclick="changeImage2();">Click to show the facts!</button>
+            </div>
+            <br>
+        </div>
+        </div>
       </div>
     </div>
 
-    <div id="onigiri">
+    <div id="cake">
       <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/8 (F) - Gloria Yao Spirited Away Onigiri-1.png" alt="Onigiri 1">
-        <img class="img-fluid" src="assets/spring2021/8 (F) - Gloria Yao Spirited Away Onigiri-2.png" alt="Onigiri 2">
+        <img class="img-fluid" src="assets/summer2021/10a - Gloria Yao - Galaxy Planet Cake.png" alt="Cake 1">
+        <img class="img-fluid" src="assets/summer2021/10b - Gloria Yao - Galaxy Planet Cake.png" alt="Cake 2">
       </div>
     </div>
 
-    <div id="anman">
+    <div id="strawberry">
       <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/9 (F) - Gloria Yao Spirited Away Anman-1.png" alt="Anman 1">
-        <img class="img-fluid" src="assets/spring2021/9 (F) - Gloria Yao Spirited Away Anman-2.png" alt="Anman 2">
+        <img class="img-fluid" src="assets/summer2021/11 - Gloria Yao - Strawberry Rockets and Rockmelon.png"
+          alt="Strawberry Rockets and Rockmelon">
       </div>
     </div>
 
-    <div id="slinkydog">
+    <div id="cakepops">
       <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/10 (F) - Pooja Murali Slinky dog candy bars from “Toy Story”.png"
-          alt="Slinky Dog Recipe">
+        <img class="img-fluid" src="assets/summer2021/12 - Gloria Yao - Over the Moon Cake Pops.png"
+          alt="Over the Moon Cake Pops">
       </div>
     </div>
 
-    <div id="potatohead">
+    <div id="cupcakes">
       <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/11 (F) - Pooja Murali Mr. and Mrs.Potato Head Cookies.png"
-          alt="Mr. and Mrs. Potato Head Cookies Recipe">
+        <img class="img-fluid" src="assets/summer2021/13 - Pooja Murali - Solar System Cupcakes.png"
+          alt="Solar System Cupcakes">
       </div>
     </div>
 
-    <div id="ricekrispie">
+    <div id="jupiter">
       <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/12 (F) - Kailey Epstein The Incredibles Rice Krispie Treats.png"
-          alt="Rice Krispie Treats Recipe">
+        <img class="img-fluid" src="assets/summer2021/14 - Pooja Murali - Fizzing Jupiter Activity.png"
+          alt="Fizzing Jupiter Activity">
       </div>
     </div>
 
-    <div id="spiritedawayfood">
+    <div id="model">
       <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/13 (F) - Gloria Yao The Food from Spirited Away.png"
-          alt="Spirited Away Food">
+        <img class="img-fluid" src="assets/summer2021/15 - Pooja Murali - Model of the Solar System DIY.png"
+          alt="Model of the Solar System DIY">
       </div>
     </div>
 
-    <div id="topmovies">
+    <div id="design">
       <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/14 (F) - Gloria Yao Top 10 Pixar Movies.png"
-          alt="Top 10 Pixar Movies">
-      </div>
-    </div>
-
-    <div id="funfacts">
-      <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/15 (F) - Kailey Epstein Pixar Movie Fun Facts.png"
+        <img class="img-fluid" src="assets/summer2021/16 - (F) Ayanna Jaikishen - Design your own planet.png"
           alt="Fun Facts">
+      <div class="printables">
+        Click
+        <u><a href="https://drive.google.com/file/d/13O1Zn2prBXg1E8iZUYGJkLCPdLXZfdTz/view?usp=sharing"
+            target="_blank">here</a></u>
+        to print out this Design Your Own Planet activity! 
       </div>
+    </div>
+    </div>
+
+    <div id="rocket">
+      <div class="img-container">
+        <img class="img-fluid" src="assets/summer2021/17 - Ayanna Jaikishen - Rocket maze.png"
+          alt="Rocket Maze">
+      <div class="printables">
+        Click
+        <u><a href="https://drive.google.com/file/d/1j1ZK9h5-c_nRl8jhu4pzil8YrritLDoP/view?usp=sharing"
+            target="_blank">here</a></u>
+        to print out this Rocket Maze activity! 
+      </div>
+    </div>
     </div>
 
     <div id="coloring">
       <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/16 (F) - Ayanna Jaikishen Ghibli Coloring Page.png"
-          alt="Coloring Page">
-          <div class="printables">
-            Click
-            <u><a href="https://drive.google.com/file/d/1FRS6ob5HhZihDmWl4D6AbljiW2_8hgIn/view?usp=sharing" style="color: white"
-                target="_blank">here</a></u>
-            to print out this Coloring Page activity!
-          </div>
+        <img class="img-fluid" src="assets/summer2021/18 - (F) Emma Mathew - Outer Space Coloring Page.png"
+          alt="Outer Space Coloring Page">
+      <div class="printables">
+        Click
+        <u><a href="https://drive.google.com/file/d/13O1Zn2prBXg1E8iZUYGJkLCPdLXZfdTz/view?usp=sharing"
+            target="_blank">here</a></u>
+        to print out this Outer Space Coloring Page activity! 
       </div>
     </div>
+    </div>
 
-    <div id="zoom" class="img-container">
-      <div id=zoom class="img-container">
-        <div id=zoomtitles>
-          <br>
-          <h4>
-            Guess the Zoomed-In Picture!
-          </h4>
-          <h6 id=inst>
-            Can you guess what/who is in the picture and which Pixar movie it's from?
-          </h6>
-          <br>
-        </div>
-        <br>
-        <br>
-        <br>
+    <div id="connect">
+      <div class="img-container">
+        <img class="img-fluid" src="assets/summer2021/19 - Emma Mathew - Connect the Dots.png"
+          alt="Connect the Dots">
+      <div class="printables">
+        Click
+        <u><a href="https://drive.google.com/file/d/1IbU9gmiwe6aySfWI6MMYbc05jUCF9xAM/view?usp=sharing"
+            target="_blank">here</a></u>
+        to print out this Connect the Dots activity! 
+      </div>
+    </div>
+    </div>
+
+    <div id="space">
+        <style>
+            #maze-bg {
+                background-image: url("assets/summer2021/mazebg.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-bottom: 0px;
+            }
+          </style>
+          <div id="maze-bg" class="img-container">
+            <h1 style="font-family: fantasy; color: white; font-size: 8vh">
+              Help the alien &#x1F47D; pick up cake and find its way home!
+            </h1>
+            <h3 style="color: white">
+              Instructions: Starting at the bottom, make your way through the maze by pressing the arrow keys. Try to avoid the rockets &#x1F680; because if you touch them you will lose points.
+            </h3>    
+            <h3 style="color: white">
+              You must pick up the cake &#x1F370; first for the alien's birthday before making your way home &#x1FA90;. Go to the checkpoints &#x1F6A9; along the way to earn BONUS points!
+            </h3>
+            <div style="text-align: center;">
+              <div id="maze_container">
+                <div id="maze" data-steps="192">
+                  <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="door exit"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="nubbin wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="nubbin wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div class="wall sentinel"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="nubbin wall wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="nubbin wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="nubbin wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="key"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall sentinel"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="door"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="door"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall sentinel"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall sentinel"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div></div><div class="nubbin"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div></div><div class="wall"></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="door"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div class="wall"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div class="wall"></div></div>
+                  <div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="door entrance"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div><div class="wall"></div></div>
+                  
+                </div>
+              </div>
+              <div id="maze_output">
+                <div id="maze_score"><!-- --></div>
+                <div id="maze_message"><!-- --></div>
+              </div>
+            </div>
+          </div>
+        
+    </div>
+
+    <div id="playlist">
         <div class="img-container">
-          <img id="myImage" class="img-fluid" src="neha_spring/cars1.jpg" alt="Zoomed-In Picture Guessing Game"
-            style="padding-bottom: 15%;">
-        </div>
-        <div id="zoombutton">
-          <button id="clickme" onclick="changeImage()">Click here to zoom out for the answer!</button>
-        </div>
-        <div id="switchbuttons" style="text-align:center;">
-          <button id="clickme" onclick="goBack()">Back</button><button id="clickme" onclick="goNext()">Next</button>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-      </div>
-    </div>
-
-    <div id="unscramble" class="img-container">
-      <div class="img-container">
-        <div class="img-container" id="unscdir" style="text-align: center;">
-          <h9>
-            Pixar Unscramble Puzzle!
-          </h9>
-          <br>
-          <h8>
-            Directions: Unscramble the Pixar movie titles and enter them below. Then, copy the letters with numbers
-            above them into their respective spots under the question to solve the riddle!
-          </h8>
-        </div>
-        <div id=unsc class="img-container" style="text-align: center">
-          <div id=unscbox style="display: inline-block;">
-            <h7>1. NDFIGIN EOMN</h7>
-            <div>
-              <form id="sg1">
-                <div style="display: inline-block; padding-top: 0.5em;">
-                  <label id=lid style="padding-left: 0em;">3<input name="member" id="member" maxlength="1" /></label>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label>
-                  <label id=lid>6<input name="member" id="member" maxlength="1" /></label>
-                </div>
-
-                <div style="display: inline-block; padding-top: 0.5em;">
-                  <label id=lid style="padding-left: 2em;"><input name="member" id="member" maxlength="1" /></label>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label>
-                  <label id=lid>7<input name="member" id="member" maxlength="1" /></label>
-                </div>
-              </form>
-            </div>
-            <h7>2. IDISNE UTO</h7>
-            <div>
-              <form id="sg1">
-                <div style="display: inline-block; padding-top: 0.5em;">
-                  <label id=lid style="padding-left: 0em;"><input name="member" id="member" maxlength="1" /></label
-                    id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid>11<input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                </div>
-
-                <div style="display: inline-block; padding-top: 0.5em;">
-                  <label id=lid style="padding-left: 1.25em;"><input name="member" id="member" maxlength="1" /></label
-                    id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid>8<input name="member" id="member" maxlength="1" /></label id=lid>
-                </div>
-              </form>
-            </div>
-            <h7>3. MESNTSOR CIN</h7>
-            <div>
-              <form id="sg1">
-                <div style="display: inline-block; padding-top: 0.5em;">
-                  <label id=lid style="padding-left: 0em;"><input name="member" id="member" maxlength="1" /></label
-                    id=lid>
-                  <label id=lid>4<input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid>5<input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                </div>
-
-                <div style="display: inline-block; padding-top: 0.5em;">
-                  <label id=lid style="padding-left: 1.25em;"> <input name="member" id="member" maxlength="1" /></label
-                    id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                </div>
-              </form>
-            </div>
-            <h7>4. LELWA</h7>
-            <div>
-              <form id="sg1">
-                <div style="display: inline-block; padding-top: 0.5em;">
-                  <label id=lid style="padding-left: 0em;">13<input name="member" id="member" maxlength="1" /></label
-                    id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid>2<input name="member" id="member" maxlength="1" /></label id=lid>
-                </div>
-              </form>
-            </div>
-            <h7>5. ITEAORLLTAU</h7>
-            <div>
-              <form id="sg1">
-                <div style="display: inline-block; padding-top: 0.5em;">
-                  <label id=lid style="padding-left: 0em;"><input name="member" id="member" maxlength="1" /></label
-                    id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid>9<input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid>10<input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid>14<input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                </div>
-              </form>
-            </div>
-            <h7>6. EHT ODGO RONIUDAS</h7>
-            <div>
-              <form id="sg1">
-                <div style="display: inline-block; padding-top: 0.5em;">
-                  <label id=lid style="padding-left: 0em;"><input name="member" id="member" maxlength="1" /></label
-                    id=lid>
-                  <label id=lid>1<input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                </div>
-
-                <div style="display: inline-block; padding-top: 0.5em;">
-                  <label id=lid style="padding-left: 1.25em;"><input name="member" id="member" maxlength="1" /></label
-                    id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                </div>
-
-                <div style="display: inline-block; padding-top: 0.5em;">
-                  <label id=lid style="padding-left: 1.25em;"><input name="member" id="member" maxlength="1" /></label
-                    id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid>12<input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" /></label id=lid>
-                </div>
-              </form>
-            </div>
-          </div>
-          <br>
-          <br>
-          <div id=unscans>
-            <div style="padding-top: 2vh">
-              <h8>Why did the employee get fired from the Pixar Cinema?</h8>
-            </div>
-            <div>
-              <form id="sg1">
-                <div style="display: inline-block; padding-top: 0.5em;">
-                  <label id=lid style="padding-left: 0em;">1<input name="member" id="member" maxlength="1" /></label
-                    id=lid>
-                  <label id=lid>2<input name="member" id="member" maxlength="1" /></label id=lid>
-                </div>
-
-                <div style="display: inline-block; padding-top: 0.5em;">
-                  <label id=lid style="padding-left: 1.25em;">3<input name="member" id="member" maxlength="1" /></label
-                    id=lid>
-                  <label id=lid>4<input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid>5<input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid>6<input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid>7<input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid>8<input name="member" id="member" maxlength="1" /></label id=lid>
-                </div>
-
-                <div style="display: inline-block; padding-top: 0.5em;">
-                  <label id=lid style="padding-left: 1.25em;">9<input name="member" id="member" maxlength="1" /></label
-                    id=lid>
-                  <label id=lid>10<input name="member" id="member" maxlength="1" /></label id=lid>
-                </div>
-
-                <div style="display: inline-block; padding-top: 0.5em;">
-                  <label id=lid style="padding-left: 1.25em;">11<input name="member" id="member" maxlength="1" /></label
-                    id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" disabled="disabled"
-                      placeholder="H"></label id=lid>
-                  <label id=lid>12<input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid>13<input name="member" id="member" maxlength="1" /></label id=lid>
-                </div>
-
-                <div style="display: inline-block; padding-top: 0.5em;">
-                  <label id=lid style="padding-left: 1.25em;"><input name="member" id="member" maxlength="1"
-                      disabled="disabled" placeholder=&quot></label id=lid>
-                  <label id=lid>14<input name="member" id="member" maxlength="1" /></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" disabled="disabled"
-                      placeholder="P"></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" disabled="disabled"
-                      placeholder=&quot></label id=lid>
-                  <label id=lid><input name="member" id="member" maxlength="1" disabled="disabled"
-                      placeholder="!"></label id=lid>
-                </div>
-              </form>
-            </div>
-          </div>
+          <img class="img-fluid" src="assets/summer2021/21 - Kailey Epstein - Outer Space Playlist.png"
+            alt="Connect the Dots">
         </div>
       </div>
-    </div>
-
-    <div id="spot">
-      <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/19 (F) - Emma Mathew Spot the Differences!.png"
-          alt="Spot the Differences">
-      </div>
-    </div>
-
-    <div id="poem">
-      <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/20 (F) - Nicole Feng Spirited Away Poem.png"
-          alt="Spirited Away Poem">
-      </div>
-    </div>
-
-    <div id="places">
-      <div class="img-container">
-        <img class="img-fluid"
-          src="assets/spring2021/21 (F) - Nicole Zhao Real Life Places that Inspired Studio Ghibli Movies-01.png"
-          alt="Real Life Places that Inspired Studio Ghibli Movies 1">
-        <img class="img-fluid"
-          src="assets/spring2021/21 (F) - Nicole Zhao Real Life Places that Inspired Studio Ghibli Movies-02.png"
-          alt="Real Life Places that Inspired Studio Ghibli Movies 2">
-        <img class="img-fluid"
-          src="assets/spring2021/21 (F) - Nicole Zhao Real Life Places that Inspired Studio Ghibli Movies-03.png"
-          alt="Real Life Places that Inspired Studio Ghibli Movies 3">
-        <img class="img-fluid"
-          src="assets/spring2021/21 (F) - Nicole Zhao Real Life Places that Inspired Studio Ghibli Movies-04.png"
-          alt="Real Life Places that Inspired Studio Ghibli Movies 4">
-        <img class="img-fluid"
-          src="assets/spring2021/21 (F) - Nicole Zhao Real Life Places that Inspired Studio Ghibli Movies-05.png"
-          alt="Real Life Places that Inspired Studio Ghibli Movies 5">
-        <img class="img-fluid"
-          src="assets/spring2021/21 (F) - Nicole Zhao Real Life Places that Inspired Studio Ghibli Movies-06.png"
-          alt="Real Life Places that Inspired Studio Ghibli Movies 6">
-        <img class="img-fluid"
-          src="assets/spring2021/21 (F) - Nicole Zhao Real Life Places that Inspired Studio Ghibli Movies-07.png"
-          alt="Real Life Places that Inspired Studio Ghibli Movies 7">
-        <img class="img-fluid"
-          src="assets/spring2021/21 (F) - Nicole Zhao Real Life Places that Inspired Studio Ghibli Movies-08.png"
-          alt="Real Life Places that Inspired Studio Ghibli Movies 8">
-        <img class="img-fluid"
-          src="assets/spring2021/21 (F) - Nicole Zhao Real Life Places that Inspired Studio Ghibli Movies-09.png"
-          alt="Real Life Places that Inspired Studio Ghibli Movies 9">
-        <img class="img-fluid"
-          src="assets/spring2021/21 (F) - Nicole Zhao Real Life Places that Inspired Studio Ghibli Movies-10.png"
-          alt="Real Life Places that Inspired Studio Ghibli Movies 10">
-      </div>
-    </div>
-
-    <div id="maze">
-      <div class="img-container">
-        <img class="img-fluid" id="image" src="assets/spring2021/maze.png" alt="Studio Ghibli Maze">
-        <div id="factbuttons">
-          <br>
-          <div id="answer1">
-            <button id="clickme" onclick="changeImage1();">Click to show the solution!</button>
-          </div>
-          <div id="maze">
-            <button id="clickme" onclick="changeImage2();">Click to show the maze!</button>
-          </div>
-          <br>
-        </div>
-      </div>
-    </div>
-
-    <div id="ghibliart">
-      <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/23 (F) - Emily Ye Studio Ghibli Art.png" alt="Studio Ghibli Art">
-      </div>
-    </div>
-
-    <div id="calciferbreakfast">
-      <div class="img-container">
-        <img class="img-fluid"
-          src="assets/spring2021/24 (F) - Netri Shah Howl’s Moving Castle Calcifer's Breakfast.jpeg"
-          alt="Calcifer's Breakfast Art">
-      </div>
-    </div>
-
-    <div id="mary">
-      <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/25 (F) - Netri Shah Mary and the Witch’s Flower.jpeg"
-          alt="Mary and the Witch's Flower Art">
-      </div>
-    </div>
-
-    <div id="tranquilnight">
-      <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/26 (F) - May Zheng Tranquil Night Art.jpg"
-          alt="Tranquil Night Art">
-      </div>
-    </div>
-
-    <div id="sixthstation">
-      <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/27 (F) - May Zheng Sixth Station.jpg" alt="Sixth Station Art">
-      </div>
-    </div>
-
-    <div id="seapath">
-      <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/28 (F) - May Zheng Sea Path Art.jpg" alt="Sea Path Art">
-      </div>
-    </div>
-
-    <div id="howlsleeps">
-      <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/29 (F) - May Zheng Howl Sleeps Art.jpg" alt="Howl Sleeps Art">
-      </div>
-    </div>
 
     <div id="questions">
       <div class="img-container">
-        <img class="img-fluid" src="assets/spring2021/30 (F) - SFAC Questions and Comments.png"
+        <img class="img-fluid" src="assets/summer2021/22 - Questions _ Comments.png"
           alt="Questions and Comments">
       </div>
     </div>
@@ -673,19 +334,8 @@
             <a class="nav-link" href="#toc">Table of Contents <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#carspopsicle">Crafts <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#planetfacts">Activities <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#kalimba">Music <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#onigiri">Recipes <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#spiritedawayfood">Activities + Writing <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#ghibliart">Art <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#questions">Questions and Comments <span class="sr-only">(current)</span></a>

@@ -19,14 +19,14 @@ h1 {
     padding-top: 70px;
     font-size: 1.25em;
     text-align: center;
-    color: black;
+    color: white;
     font-family: quicksand;
 }
 
 h2 {
     font-size: 1.1em;
     text-align: center;
-    color: black;
+    color: white;
     font-family: quicksand;
     padding-bottom: 15%;
 }
@@ -34,24 +34,20 @@ h2 {
 h3 {
     font-size: 1.1em;
     text-align: center;
-    color: black;
+    color: white;
     font-family: quicksand;
 }
 
 a:link {
-    color: black;
+    color: white;
 }
 
 a:visited {
-    color: purple;
+    color: white;
 }
 
 a:hover {
     color: blue;
-}
-
-a:active {
-    color: black;
 }
 
 .img-container {
@@ -65,7 +61,7 @@ a:active {
 }
 
 #toc {
-    background-image: url('assets/spring2021/3\ \(F\)\ -\ Skylar\ Holland\ Title\ Page.png');
+    background-image: url('assets/summer2021/3-Table\ of\ Contents.png');
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 0px;
@@ -124,7 +120,7 @@ a:active {
 }
 
 #factbuttons {
-    background-image: url('assets/spring2021/0e3650.png');
+    background-image: url('assets/summer2021/darkblue.png');
 }
 
 #answer1 {
